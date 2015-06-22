@@ -1,0 +1,79 @@
+Metalworking
+============
+
+Basic Item Stats:
+* Name
+* Type
+* Durability & Durability Mod
+* Affinities & Affinity Mod
+  * Physical
+  * Elemental
+  * Special Damage Types
+* Stat Bonuses
+* Any Misc info
+
+
+Processes:
+
+* Smelt
+* Alloy
+* Heat Treat
+* Grind
+
+Smelt
+=====
+Inputs:
+* N units of Ore
+
+Outputs:
+* N units of Metal
+
+Process:
+* Metal has the same modifers as the Ore.
+* Metal's stats are equal to the Ore's stats plus the Ore's modifiers.
+
+Example:
+
+Copper Ore			Copper Ingot
+[Ore]		  -Smelt->	[Metal]
+Dur: 10(+2)			Dur: 12(+2)
+P. Aff: 90%(+5%)		P. Aff: 95%(+5%)
+
+
+Grind
+=====
+Inputs:
+* N units of Ore
+
+Outputs:
+* N units of Powder
+
+Process:
+* Powder has same stats as the Ore, except durability, which is reduced by the Ore's modifer
+
+Copper Ore			Copper Powder
+[Ore]		  -Grind->	[Powder]
+Dur: 10(+2)			Dur: 10(+2)
+P. Aff: 90%(+5%)		P. Aff: 90%(+5%)
+
+
+Alloy
+=====
+Inputs:
+* N units of up to four different Metals
+
+Outputs:
+* N units of Alloy
+
+
+Heat Treat
+==========
+Inputs:
+* N units of Metal or Alloy
+* M units of Chemical
+
+Outputs:
+* N units of Treated Metal or Alloy
+
+
+
