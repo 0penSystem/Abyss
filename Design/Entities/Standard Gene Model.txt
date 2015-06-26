@@ -1,0 +1,40 @@
+Standard Gene Model (SGM)
+
+Chromosomes are 6 Genes long.
+A gene is one byte (8 bits).
+
+
+Chromosome 1: Basic Stats
+#	|NAME	|Gene Pattern	|Use
+00	|STR	|STAT			|
+01	|DEX	|STAT			|
+02	|FOR	|STAT			|
+03	|INT	|STAT			|
+04	|ARC	|STAT			|
+05	|FAI	|STAT			|
+
++-------------------------------------+
+|Gene Pattern 1: Stat Bonuses (STAT)  |
+|12222222                             |
+|                                     |
+|1- Negative if true                  |
+|2- Integer value to use as percentage|
++-------------------------------------+
+
+Chromosome 2: Appearance
+#	|NAME	|Gene Pattern	|Use
+06	|SIZE	|STAT			|
+07	|COLa	|COLR			|
+08	|COLb	|COLR			|
+09	|COLc	|COLR			|
+10	|MISC   |RAW			|
+11	|GEND   |RAW			|
+
++-----------------------------+
+|Gene Pattern 2: Colors (COLR)|
+|11122233                     |
+|                             |
+|1- Red                       |
+|2- Green                     |
+|3- Blue                      |
++-----------------------------+
